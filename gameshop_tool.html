@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>WreckerB</title>
+	</head>
+	<body>
+		<div>gameshop_tool</div><br>
+		<button onclick="window.location.href='index.html'">返回主页</button><br><br>
+		<form>
+			<input type="text" value="" id="getInputText" placeholder="按名称搜索" autocomplete="off" required>
+			<input type="submit" value="搜索" onclick="search()"/>
+		</form>
+	</body>
+	<script>
+		function search() {
+			var inputText = document.getElementById("getInputText").value
+			var searchText = "query/" + inputText
+			var urlText = "https://buyee.jp/item/search/" + searchText + "/category/2084006448?lang=ja"
+			if (inputText.replace(/(^\s*)|(\s*$)/g, "") != "") {
+				window.open(urlText)
+			}
+		}
+	</script>
+</html>
