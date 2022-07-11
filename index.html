@@ -3,12 +3,47 @@
 	<head>
 		<meta charset="utf-8">
 		<title>WreckerB</title>
+		<link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<div>index</div><br>
 		<button onclick="window.location.href='gameinformation.html'">本体资料站</button>
 		<button onclick="window.location.href='gameshop_original.html'">本体原站</button>
 		<button onclick="window.location.href='gameshop_tool.html'">本体工具站</button><br><br>
-		<button onclick="window.location.href='pillowinformation.html'">抱枕资料站</button>
+		<button onclick="window.location.href='pillowinformation.html'">抱枕资料站</button><br><br><br>
+		<a href="https://www.yahoo.co.jp" target="_blank">
+			<img alt="Yahoo! JAPAN" src="img/svg/yahoo.co.jp_logo.svg" width="213" height="54">
+		</a><br>
+		<form>
+			<input type="text" value="" id="getInputText" placeholder="快捷搜索" autocomplete="off" required>
+			<input type="submit" value="搜索" onclick="search()"/>
+		</form>
+		<div class="waifu">
+			<div class="waifu-tips"></div>
+			<canvas id="live2d" class="live2d"></canvas>
+			<div class="waifu-tool">
+				<span class="fui-home"></span>
+				<span class="fui-chat"></span>
+				<span class="fui-eye"></span>
+				<span class="fui-user"></span>
+				<span class="fui-photo"></span>
+				<span class="fui-info-circle"></span>
+				<span class="fui-cross"></span>
+			</div>
+		</div>
+		<script src="https://www.fghrsh.net/zb_users/plugin/live2d/assets/jquery-ui.min.js"></script>
+		<script src="assets/waifu-tips.js"></script>
+		<script src="assets/live2d.js"></script>
+		<script type="text/javascript">initModel("assets/waifu-tips.json")</script>
 	</body>
+	<script>
+		function search() {
+			var inputText = document.getElementById("getInputText").value
+			var urlText = "https://search.yahoo.co.jp/search?p=" + inputText
+			if (inputText.replace(/(^\s*)|(\s*$)/g, "") != "") {
+				window.open(urlText)
+			}
+		}
+	</script>
 </html>
