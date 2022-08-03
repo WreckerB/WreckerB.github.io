@@ -23,16 +23,29 @@
 		</style>
 	</head>
 	<body>
-		<div>pillowinformation</div><br>
+		<div>pillow_information</div><br>
 		<button onclick="window.location.href='index.html'">返回主页</button><br><br>
 		<a href="https://brantacanadensis.site/" target="_blank" class="brantacanadensis">
 			加拿大鹅抱枕研发中心
 		</a><br><br>
 		<a href="http://omiai-dakimakura.com/" target="_blank">
 			<img alt="おみあい！ 抱き枕カバー" src="img/png/omiai-dakimakura_logo.png" width="240" height="60">
-		</a><br><br>
+		</a><br>
+		<form>
+			<input type="text" value="" id="getOmiaiInputText" placeholder="按名称搜索" autocomplete="off" required>
+			<input type="submit" value="搜索" onclick="omiai_search()"/>
+		</form><br><br>
 		<a href="http://fosblog.blog94.fc2.com/" target="_blank">
 			<div class="fosblog">×Phos/抱き枕×</div>
 		</a>
 	</body>
+	<script>
+		function omiai_search() {
+			var inputText = document.getElementById("getOmiaiInputText").value
+			var urlText = "http://omiai-dakimakura.com/?s=" + inputText
+			if (inputText.replace(/(^\s*)|(\s*$)/g, "") != "") {
+				window.open(urlText)
+			}
+		}
+	</script>
 </html>
