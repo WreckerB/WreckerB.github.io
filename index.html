@@ -1,58 +1,15 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>WreckerB</title>
-		<link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
-		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-	</head>
-	<body>
-		<div>index</div><br>
-		<a href="https://www.yahoo.co.jp" target="_blank">
-			<img alt="Yahoo! JAPAN" src="img/svg/yahoo.co.jp_logo.svg" width="213" height="54">
-		</a><br>
-		<form>
-			<input type="text" value="" id="getInputText" placeholder="快捷搜索" autocomplete="off" required>
-			<input type="submit" value="搜索" onclick="search()"/>
-		</form><br><br>
-		<a href="https://www.youtube.com/" target="_blank">
-			<img alt="YouTube" src="img/svg/YouTube_logo.svg" width="256" height="57">
-		</a><br><br>
-		<a href="https://twitter.com/" target="_blank">
-			<img alt="Twitter" src="img/svg/Twitter_logo.svg" width="64" height="52.625">
-		</a><br><br>
-		<a href="https://www.dlsite.com/maniax/" target="_blank">
-			<img alt="DLsite R18" src="img/png/dlsite-r18_logo.png" width="132" height="25">
-		</a><br><br>
-		<button onclick="window.location.href='game_shop_original.html'">本体原站</button>
-		<button onclick="window.location.href='game_shop_tool.html'">本体工具站</button>
-		<button onclick="window.location.href='game_information.html'">本体资料站</button><br><br>
-		<button onclick="window.location.href='pillow_information.html'">抱枕资料站</button><br><br><br>
-		<div class="waifu">
-			<div class="waifu-tips"></div>
-			<canvas id="live2d" class="live2d"></canvas>
-			<div class="waifu-tool">
-				<span class="fui-home"></span>
-				<span class="fui-chat"></span>
-				<span class="fui-eye"></span>
-				<span class="fui-user"></span>
-				<span class="fui-photo"></span>
-				<span class="fui-info-circle"></span>
-				<span class="fui-cross"></span>
-			</div>
-		</div>
-		<script src="https://www.fghrsh.net/zb_users/plugin/live2d/assets/jquery-ui.min.js"></script>
-		<script src="assets/waifu-tips.js"></script>
-		<script src="assets/live2d.js"></script>
-		<script type="text/javascript">initModel("assets/waifu-tips.json")</script>
-	</body>
-	<script>
-		function search() {
-			var inputText = document.getElementById("getInputText").value
-			var urlText = "https://search.yahoo.co.jp/search?p=" + inputText
-			if (inputText.replace(/(^\s*)|(\s*$)/g, "") != "") {
-				window.open(urlText)
-			}
-		}
-	</script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue For WreckerB</title>
+    <script type="module" crossorigin src="/assets/index.760f92d5.js"></script>
+    <link rel="stylesheet" href="/assets/index.1c5d4085.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+  </body>
 </html>
