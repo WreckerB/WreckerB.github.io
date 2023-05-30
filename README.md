@@ -6,4 +6,4 @@
 
 ## View Deployment
 
-- [https://wreckerb.github.io/](https://wreckerb.github.io/)
+- [https://wreckerb.github.io](https://wreckerb.github.io)
