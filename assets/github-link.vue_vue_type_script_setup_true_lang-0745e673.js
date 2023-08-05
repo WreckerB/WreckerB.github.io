@@ -1,1 +1,0 @@
-import{_ as a}from"./web-site-link.vue_vue_type_script_setup_true_lang-a602bda4.js";import{d as e,aN as i,aQ as o}from"./index-26b48c19.js";const _=e({name:"GithubLink",__name:"github-link",props:{link:{}},setup(r){return(n,t)=>(i(),o(a,{label:"github地址：",link:n.link},null,8,["link"]))}});export{_};
