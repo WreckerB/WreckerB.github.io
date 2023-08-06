@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vueexport-helper-c27b6911.js";import{aE as r,aF as c}from"./index-6eb1e305.js";const n={};function o(t,a){return r(),c("div",null,"路由管理")}const f=e(n,[["render",o]]);export{f as default};
