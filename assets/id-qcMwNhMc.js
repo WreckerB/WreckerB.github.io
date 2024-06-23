@@ -1,0 +1,1 @@
+import{_ as e}from"./look-forward.vuevuetypescriptsetuptruelang-CDcYh_4A.js";import{d as a,o as n,c as r}from"./index-COhKU8vC.js";const p=a({name:"manage_user-detail",__name:"[id]",props:{id:{}},setup(t){return(_,s)=>{const o=e;return n(),r(o)}}});export{p as default};
