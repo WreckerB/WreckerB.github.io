@@ -1,0 +1,1 @@
+import{A as e,S as t,W as n}from"./CFVOu-xu.js";import{t as r}from"./DX-teomm.js";var i=e({__name:`index`,setup(e){return(e,i)=>(n(),t(r))}});export{i as default};
