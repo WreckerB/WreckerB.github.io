@@ -1,0 +1,1 @@
+import{G as e,S as t,j as n}from"./BQvX7SHP.js";import{t as r}from"./CoC3VcIj.js";var i=n({__name:`index`,setup(n){return(n,i)=>(e(),t(r))}});export{i as default};
