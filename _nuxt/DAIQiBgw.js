@@ -1,1 +1,0 @@
-import{A as e,S as t,W as n}from"./CFVOu-xu.js";import{t as r}from"./X0AAK0a6.js";var i=e({__name:`pillow`,setup(e){return(e,i)=>(n(),t(r))}});export{i as default};
