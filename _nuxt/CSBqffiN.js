@@ -1,0 +1,1 @@
+import{Tt as e,Vt as t,yt as n}from"./PgwJlZ3E.js";import{t as r}from"./W0iUNVmN.js";var i=e({__name:`galgame`,setup(e){return(e,i)=>(t(),n(r))}});export{i as default};

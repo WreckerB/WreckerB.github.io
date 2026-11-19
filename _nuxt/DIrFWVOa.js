@@ -1,1 +1,0 @@
-import{A as e,S as t,W as n}from"./CFVOu-xu.js";import{t as r}from"./BMTEX9nA.js";var i=e({__name:`pillow`,setup(e){return(e,i)=>(n(),t(r))}});export{i as default};
